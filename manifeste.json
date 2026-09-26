@@ -1,0 +1,42 @@
+{
+  "format": "personne",
+  "version": "0.3",
+  "auteur": "Hugo Lallain",
+  "depot": "local — aucune publication sans décision de l'auteur",
+  "resolution": "https://github.com/Jahoz/hugo-lallain",
+  "principe": "Un lot versionné (profil, méthode, voix, règles, projets) qu'aucune IA ne possède mais que toutes savent lire. Le canon est la source ; les vues sont générées.",
+  "canon": [
+    { "id": "identite", "fichier": "canon/identite.md", "visibilite": "public" },
+    { "id": "methode", "fichier": "canon/methode.md", "visibilite": "public" },
+    { "id": "voix", "fichier": "canon/voix.md", "visibilite": "public" },
+    { "id": "regles-ia", "fichier": "canon/regles-ia.md", "visibilite": "public" },
+    { "id": "projets", "fichier": "canon/projets.md", "visibilite": "public" },
+    { "id": "prive", "fichier": "canon/prive.md", "visibilite": "prive" },
+    { "id": "annexe-zcode", "fichier": "canon/annexes/zcode.md", "visibilite": "annexe" }
+  ],
+  "vues": [
+    {
+      "nom": "IA-publique",
+      "fichier": "vues/IA-publique.md",
+      "description": "Le bundle à présenter à toute IA qui découvre Hugo — ChatGPT, Claude, Gemini, ou la prochaine. Collable en un bloc.",
+      "sections": ["identite", "methode", "voix", "regles-ia", "projets"]
+    },
+    {
+      "nom": "zcode-agents",
+      "fichier": "vues/zcode-agents.md",
+      "description": "Devenue ~/.zcode/AGENTS.md en v0.2 — le canon est la source : corriger le canon, relancer le compilateur, réinstaller la vue.",
+      "sections": ["identite", "methode", "voix", "regles-ia", "projets", "annexe-zcode"]
+    }
+  ],
+  "signature": {
+    "identite": "hugo.akawam@gmail.com",
+    "cle": "outils/cle-signature.pub",
+    "note": "Clé SSH ed25519 dédiée : elle signe les commits (v0.4) et les vues détachées (v0.5)."
+  },
+  "regles": [
+    "Une fiche n'entre au canon que si elle est stable ; le vivant daté vit dans le cerveau (life/cerveau).",
+    "Aucun secret, aucun montant, aucune donnée de santé ou de procédure au canon — le garde-fou canon/prive.md le rappelle.",
+    "Les vues sont générées par outils/construire-vues.mjs ; on ne les édite jamais à la main.",
+    "Une fiche privée ne peut figurer dans aucune vue — le compilateur refuse."
+  ]
+}
