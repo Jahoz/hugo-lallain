@@ -61,16 +61,17 @@ v0.1 ; les deux suivantes sont le chantier.
   vérifiable sans git ni canon — `ssh-keygen` suffit. Testé le 26/09 : la
   vue légitime passe, une vue trafiquée est rejetée.
 
-### v0.6 — le point de résolution (attend le oui d'Hugo)
+### v0.6 — le point de résolution (fait le 26/09/2026, sur le oui d'Hugo)
 
-- Un miroir public en lecture seule (canon public + vues signées), dont
-  l'adresse entre dans le passeport. Une IA neuve à qui on donne juste
-  l'adresse retrouve la personne courante et signale une vue périmée.
-- **Critère** : « va chercher la personne d'Hugo à cette adresse » suffit
-  à une IA pour obtenir la version courante et la vérifier.
-- Garde : ce palier sort du dépôt — il attend le oui d'Hugo (règle 5 du
-  canon). Le support exact (page statique, gist, dépôt public) se choisira
-  ce jour-là.
+- Le miroir public **github.com/Jahoz/hugo-lallain** : une vue du dépôt
+  entier, générée par liste blanche (`outils/publier-miroir.mjs`), jamais
+  éditée à la main. L'adresse vit dans le manifeste et dans le passeport
+  de chaque vue.
+- Le dépôt distant privé `Jahoz/personne` (remote `origin`) garde son
+  rôle : la sauvegarde de l'historique local — deux dépôts, deux natures.
+- **Critère tenu le 26/09** : un clone anonyme de l'adresse seule rend la
+  vue lisible, sa signature vérifiable, et la reconstruction redonne
+  l'empreinte courante (`personne@87ae84335ff4`).
 
 ### v0.7 — le geste produit
 
@@ -80,6 +81,12 @@ v0.1 ; les deux suivantes sont le chantier.
   vérifiable, récupérable.
 - **Critère** : un participant repart avec un dépôt qui compile et deux
   vues générées — le même geste que ce dépôt, à lui.
+- État au 26/09 au soir : l'atelier est **l'offre I de Telos** (kit,
+  canvas, déroulé, charte de dérivation dans `ateliers/personne-ia/`) ;
+  le kit est cousu au format courant (passeport + vérification par
+  reconstruction, test participant réel passé) et la dérivation graduée
+  est posée — signature et résolution sont les paliers « chez soi ».
+  Reste : la séance réelle, premier participant en chair et en os.
 
 ## Règles d'itération (toujours vraies)
 
