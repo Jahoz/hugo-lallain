@@ -1,8 +1,8 @@
 {
   "passeport": {
-    "format": "personne/0.4",
+    "format": "prosopon/0.5",
     "auteur": "Hugo Lallain",
-    "canon": "personne@36054fc0d9ed",
+    "canon": "prosopon@fdcac8dabce4",
     "generee": "2026-09-27",
     "signature": "personne.json.sig",
     "cle": "outils/cle-signature.pub",

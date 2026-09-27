@@ -44,7 +44,7 @@ console.log(`signatures vérifiées : ${manifeste.vues.length} vue(s).`);
 
 // 2. L'empreinte courante, lue dans le passeport — la vue est le témoin.
 const passeport = readFileSync(join(RACINE, manifeste.vues[0].fichier), "utf8");
-const empreinte = passeport.match(/canon: `(personne@[0-9a-f]+)`/)?.[1];
+const empreinte = passeport.match(/canon: `([a-z-]+@[0-9a-f]+)`/)?.[1];
 if (!empreinte) throw new Error("empreinte introuvable dans le passeport — relancer `node outils/construire-vues.mjs` puis `node outils/signer-vues.mjs`.");
 const dateISO = new Date().toISOString().slice(0, 10);
 
@@ -123,8 +123,9 @@ const accueil = [
   "",
   "Pas de compte, pas de service, pas de collecte — lecture seule. Le canon",
   "ne contient que le stable ; le vivant daté et le privé restent hors-ligne",
-  "(la politique : `canon/prive.md`). Le format `personne` est né le 25/09/2026 :",
-  "une identité qu'aucune IA ne possède mais que toutes savent lire.",
+  "(la politique : `canon/prive.md`). Le format — **Prosopon** depuis le",
+  "27/09/2026 — est né le 25/09/2026 : une identité qu'aucune IA ne",
+  "possède mais que toutes savent lire.",
   "",
   "## Jusqu'où va la garantie",
   "",

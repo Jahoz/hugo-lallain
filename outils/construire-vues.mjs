@@ -17,20 +17,20 @@ const manifeste = JSON.parse(readFileSync(join(RACINE, "manifeste.json"), "utf8"
 // Fiches du canon, indexées par id — le contenu reste pur markdown.
 // L'empreinte du canon : SHA-256 sur la version du format puis, dans
 // l'ordre du manifeste, « id \n fichier \n contenu \n » de chaque fiche.
-// Elle figure dans le tampon de chaque vue (« personne@… ») : quiconque
+// Elle figure dans le tampon de chaque vue (« <format>@… ») : quiconque
 // reçoit le canon relance l'outil, obtient la même empreinte et vérifie
 // que la vue en provient — sans confiance sur parole. Changer l'ordre ou
 // le périmètre de la recette changerait toutes les empreintes : on n'y
 // touche qu'à version près.
 const fiches = new Map();
 const empreinte = createHash("sha256");
-empreinte.update(`personne ${manifeste.version}\n`);
+empreinte.update(`${manifeste.format} ${manifeste.version}\n`);
 for (const fiche of manifeste.canon) {
   const contenu = readFileSync(join(RACINE, fiche.fichier), "utf8").trim();
   fiches.set(fiche.id, { ...fiche, contenu });
   empreinte.update(`${fiche.id}\n${fiche.fichier}\n${contenu}\n`);
 }
-const empreinteCanon = `personne@${empreinte.digest("hex").slice(0, 12)}`;
+const empreinteCanon = `${manifeste.format}@${empreinte.digest("hex").slice(0, 12)}`;
 
 const aujourdhui = new Date();
 const dateISO = aujourdhui.toISOString().slice(0, 10);

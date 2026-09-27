@@ -1,6 +1,6 @@
 # IA-publique — Hugo Lallain
 
-> **Passeport** — vue « IA-publique » · format: `personne/0.4` · auteur: `Hugo Lallain` · canon: `personne@36054fc0d9ed` · générée: `2026-09-27` · signature: `IA-publique.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
+> **Passeport** — vue « IA-publique » · format: `prosopon/0.5` · auteur: `Hugo Lallain` · canon: `prosopon@fdcac8dabce4` · générée: `2026-09-27` · signature: `IA-publique.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
 > **Vérifier** : `ssh-keygen -Y verify -f outils/signataires-autorises -I hugo.akawam@gmail.com -n file -s IA-publique.md.sig < IA-publique.md` — la version courante vit à l'adresse du passeport ; ou, le canon en main, relancer `node outils/construire-vues.mjs` et comparer l'empreinte du canon.
 > Générée, jamais éditée à la main : corriger le canon dans `~/Developer/personne`.
 

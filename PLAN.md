@@ -107,15 +107,17 @@ v0.1 ; les deux suivantes sont le chantier.
 - **Critère** : une IA peut retracer l'évolution publique de la personne
   (registre + historique) et repérer une rotation non annoncée.
 
-### v0.9 — le nom (à trancher par Hugo)
+### v0.9 — le nom (fait le 27/09/2026 : **Prosopon**)
 
-- Le format mérite un nom propre, dans la continuité grecque de la
-  famille (Telos, Daimonio, Hestia/Mentor) : **Prosopon** (πρόσωπον) —
-  le mot grec ancien pour « personne », né du masque de théâtre : ce par
-  quoi l'acteur se rend reconnaissable. Alternatives : **Charaktèr**
-  (l'empreinte du sceau), **Sphragis** (le sceau lui-même), **Onoma**
-  (le nom). Décision d'Hugo ; le renommage serait un palier versionné, le
-  dépôt peut rester « personne » — le descripteur français.
+- Décision d'Hugo le 27/09 au soir : le format s'appelle **Prosopon**
+  (πρόσωπον) — le mot grec ancien pour « personne », né du masque de
+  théâtre ; la continuité de la famille (Telos, Daimonio, Hestia/Mentor).
+  *Telos dessine, Daimonio veille, Prosopon se présente.*
+- Palier versionné : le manifeste passe à `prosopon/0.5`, les empreintes
+  deviennent `prosopon@…`, le registre trace le renommage (l'ancienne
+  lignée `personne@…` y reste, c'est l'histoire). Le kit atelier suit
+  (`prosopon-ia/0.2`, côté telos). Le dépôt reste `personne` — le
+  descripteur français.
 
 ## Règles d'itération (toujours vraies)
 
