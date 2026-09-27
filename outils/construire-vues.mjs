@@ -61,6 +61,31 @@ for (const vue of manifeste.vues) {
     }
     parties.push(fiche.contenu);
   }
+  const chemin = join(RACINE, vue.fichier);
+  mkdirSync(dirname(chemin), { recursive: true });
+
+  // La vue machine : même canon, même passeport, fiches en dictionnaire —
+  // pour les agents qui préfèrent parser que lire. Signée pareil par
+  // signer-vues.mjs (le `.sig` accompagne le `.json`).
+  if (vue.format === "json") {
+    const machine = {
+      passeport: {
+        format: `${manifeste.format}/${manifeste.version}`,
+        auteur: manifeste.auteur,
+        canon: empreinteCanon,
+        generee: dateISO,
+        signature: `${basename(vue.fichier)}.sig`,
+        cle: "outils/cle-signature.pub",
+        ...(manifeste.resolution ? { adresse: manifeste.resolution } : {}),
+      },
+      fiches: Object.fromEntries(vue.sections.map((id) => [id, fiches.get(id).contenu])),
+    };
+    writeFileSync(chemin, JSON.stringify(machine, null, 2) + "\n");
+    console.log(`vue écrite : ${vue.fichier} (machine, ${vue.sections.length} fiches)`);
+    vuesEcrites++;
+    continue;
+  }
+
   const sortie = [
     `# ${vue.nom} — ${manifeste.auteur}`,
     "",
@@ -70,8 +95,6 @@ for (const vue of manifeste.vues) {
     "",
     ...parties.flatMap((p) => [p, ""]),
   ].join("\n");
-  const chemin = join(RACINE, vue.fichier);
-  mkdirSync(dirname(chemin), { recursive: true });
   writeFileSync(chemin, sortie);
   console.log(`vue écrite : ${vue.fichier} (${parties.length} fiches)`);
   vuesEcrites++;

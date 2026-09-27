@@ -88,6 +88,35 @@ v0.1 ; les deux suivantes sont le chantier.
   est posée — signature et résolution sont les paliers « chez soi ».
   Reste : la séance réelle, premier participant en chair et en os.
 
+### v0.8 — durcir et ouvrir (fait le 27/09/2026)
+
+- **Le registre** : `REGISTRE.md` — la chronologie des empreintes
+  publiées, alimentée à chaque publication (`publier-miroir.mjs -m "…"`),
+  jamais éditée à la main. L'auditabilité, pas juste l'instantané.
+- **La rotation de clé** : le plan de secours écrit au README — et
+  l'historique git du miroir comme registre des clés, gratuit.
+- **La racine de confiance dite** : l'accueil du miroir énonce jusqu'où
+  va la garantie (compte GitHub + TLS) — l'honnêteté sur les limites
+  fait partie de la crédibilité.
+- **La vue machine** : `vues/personne.json` (format 0.4) — passeport en
+  tête, fiches en dictionnaire, signée pareil.
+- **La carte qui se résout** : la recette QR au README (l'artefact vivra
+  côté Telos) ; **l'offre II** « Souveraineté · les paliers chez soi »
+  posée dans telos (💡 690 € HT) — la règle 6 de la charte devenue
+  produit.
+- **Critère** : une IA peut retracer l'évolution publique de la personne
+  (registre + historique) et repérer une rotation non annoncée.
+
+### v0.9 — le nom (à trancher par Hugo)
+
+- Le format mérite un nom propre, dans la continuité grecque de la
+  famille (Telos, Daimonio, Hestia/Mentor) : **Prosopon** (πρόσωπον) —
+  le mot grec ancien pour « personne », né du masque de théâtre : ce par
+  quoi l'acteur se rend reconnaissable. Alternatives : **Charaktèr**
+  (l'empreinte du sceau), **Sphragis** (le sceau lui-même), **Onoma**
+  (le nom). Décision d'Hugo ; le renommage serait un palier versionné, le
+  dépôt peut rester « personne » — le descripteur français.
+
 ## Règles d'itération (toujours vraies)
 
 1. Le canon ne contient que du **stable** ; le vivant daté reste dans le

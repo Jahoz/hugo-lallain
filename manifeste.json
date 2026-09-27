@@ -1,6 +1,6 @@
 {
   "format": "personne",
-  "version": "0.3",
+  "version": "0.4",
   "auteur": "Hugo Lallain",
   "depot": "local — aucune publication sans décision de l'auteur",
   "resolution": "https://github.com/Jahoz/hugo-lallain",
@@ -26,6 +26,13 @@
       "fichier": "vues/zcode-agents.md",
       "description": "Devenue ~/.zcode/AGENTS.md en v0.2 — le canon est la source : corriger le canon, relancer le compilateur, réinstaller la vue.",
       "sections": ["identite", "methode", "voix", "regles-ia", "projets", "annexe-zcode"]
+    },
+    {
+      "nom": "machine",
+      "fichier": "vues/personne.json",
+      "format": "json",
+      "description": "La même personne, lisible par une machine — passeport en tête, fiches en dictionnaire. Signée pareil (personne.json.sig).",
+      "sections": ["identite", "methode", "voix", "regles-ia", "projets"]
     }
   ],
   "signature": {

@@ -26,7 +26,7 @@ const CLE = process.env.PERSONNE_CLE || join(homedir(), ".ssh", "id_ed25519_sign
 // La liste blanche : ce qui sort, et rien d'autre. Les états de machine
 // (.mimosa, .video_agent, .miroir) et le README local (remplacé par
 // l'accueil généré) ne figurent volontairement pas ici.
-const LISTE_BLANCHE = ["canon", "manifeste.json", "outils", "vues", "PLAN.md", "CARTE_SOURCES.md"];
+const LISTE_BLANCHE = ["canon", "manifeste.json", "outils", "vues", "PLAN.md", "CARTE_SOURCES.md", "REGISTRE.md"];
 const DESCRIPTION = "L'identité reconnue et portable d'Hugo Lallain pour les IA — point de résolution du format personne (lecture seule).";
 
 const run = (cmd, args, opts = {}) => {
@@ -47,6 +47,20 @@ const passeport = readFileSync(join(RACINE, manifeste.vues[0].fichier), "utf8");
 const empreinte = passeport.match(/canon: `(personne@[0-9a-f]+)`/)?.[1];
 if (!empreinte) throw new Error("empreinte introuvable dans le passeport — relancer `node outils/construire-vues.mjs` puis `node outils/signer-vues.mjs`.");
 const dateISO = new Date().toISOString().slice(0, 10);
+
+// 2bis. Le registre : la chronologie des empreintes publiées. Alimentée à
+// chaque publication (l'empreinte du jour y entre si elle n'y est pas),
+// jamais éditée à la main — l'auditabilité publique de l'évolution de la
+// personne, pas juste son instantané.
+const note = process.argv.includes("-m") ? process.argv[process.argv.indexOf("-m") + 1] : "publication";
+const CHEMIN_REGISTRE = join(RACINE, "REGISTRE.md");
+let registre = readFileSync(CHEMIN_REGISTRE, "utf8");
+if (!registre.includes(empreinte)) {
+  const dateFR = new Date().toLocaleDateString("fr-FR");
+  registre = `${registre.trimEnd()}\n| ${dateFR} | \`${empreinte}\` | ${note} |\n`;
+  writeFileSync(CHEMIN_REGISTRE, registre);
+  console.log(`registre : ligne ajoutée pour ${empreinte} — ${note}`);
+}
 
 // 3. Premier passage : créer le dépôt distant s'il manque, puis cloner et
 // configurer la signature des commits du miroir.
@@ -111,6 +125,16 @@ const accueil = [
   "ne contient que le stable ; le vivant daté et le privé restent hors-ligne",
   "(la politique : `canon/prive.md`). Le format `personne` est né le 25/09/2026 :",
   "une identité qu'aucune IA ne possède mais que toutes savent lire.",
+  "",
+  "## Jusqu'où va la garantie",
+  "",
+  "La signature prouve que ceci vient de l'auteur — elle ne protège ni le",
+  "compte qui héberge, ni le transport. La racine de la confiance est le",
+  "compte GitHub de l'auteur (`Jahoz`) et TLS : si lui tombe, tout tombe.",
+  "La parade au silence : l'historique git de ce miroir garde chaque état",
+  "publié (clés, empreintes) — comparer avant de croire une vue isolée, et",
+  "lire [`REGISTRE.md`](REGISTRE.md), la chronologie des empreintes publiées.",
+  "Une rotation de clé s'y verrait ; une vue qui n'y figure pas se signale.",
   "",
 ].join("\n");
 writeFileSync(join(MIROIR, "README.md"), accueil);
