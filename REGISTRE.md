@@ -8,3 +8,4 @@
 | 26/09/2026 | `personne@87ae84335ff4` | la première publiée — les paliers v0.5 à v0.7 : passeport, vues signées, point de résolution |
 | 27/09/2026 | `personne@36054fc0d9ed` | v0.8 : vue machine personne.json, registre des empreintes, rotation documentée, racine de confiance |
 | 27/09/2026 | `prosopon@fdcac8dabce4` | v0.9 : le format devient Prosopon (πρόσωπον) — prosopon/0.5, empreintes prosopon@ ; le kit atelier suit (prosopon-ia/0.2) |
+| 15/10/2026 | `prosopon@8394b9dbc40d` | Phylax entre à l'index public des projets ; la ligne Telos suit (vitrine en pré-lancement, l'ERP tourne) — canon prosopon@8394b9dbc40d |

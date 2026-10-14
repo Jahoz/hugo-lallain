@@ -1,6 +1,6 @@
 # zcode-agents — Hugo Lallain
 
-> **Passeport** — vue « zcode-agents » · format: `prosopon/0.5` · auteur: `Hugo Lallain` · canon: `prosopon@fdcac8dabce4` · générée: `2026-09-27` · signature: `zcode-agents.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
+> **Passeport** — vue « zcode-agents » · format: `prosopon/0.5` · auteur: `Hugo Lallain` · canon: `prosopon@8394b9dbc40d` · générée: `2026-10-14` · signature: `zcode-agents.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
 > **Vérifier** : `ssh-keygen -Y verify -f outils/signataires-autorises -I hugo.akawam@gmail.com -n file -s zcode-agents.md.sig < zcode-agents.md` — la version courante vit à l'adresse du passeport ; ou, le canon en main, relancer `node outils/construire-vues.mjs` et comparer l'empreinte du canon.
 > Générée, jamais éditée à la main : corriger le canon dans `~/Developer/personne`.
 
@@ -89,7 +89,11 @@ Devenue ~/.zcode/AGENTS.md en v0.2 — le canon est la source : corriger le cano
 > leurs dépôts ; rien ici d'inédit ni de confidentiel.
 
 - **Telos** — le studio de conception logicielle de ma relance :
-   offres, positionnement, prospection (en construction).
+   offres, positionnement, produits — la vitrine vit en pré-lancement,
+   l'ERP du studio tourne.
+- **Phylax** — le premier produit propre du studio : le veilleur des
+   dossiers de divorce, un copilote factuel (pièces numérotées et
+   citables, affirmations vérifiées — jamais de conseil juridique).
 - **La Loco / Nature & Savoir-Faire** (bénévolat) — café citoyen de la
    gare des Fontinettes à Calais : site public + outil de gestion
    associatif sur mesure (Next.js, Supabase, auto-hébergé).

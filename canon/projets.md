@@ -4,7 +4,11 @@
 > leurs dépôts ; rien ici d'inédit ni de confidentiel.
 
 - **Telos** — le studio de conception logicielle de ma relance :
-   offres, positionnement, prospection (en construction).
+   offres, positionnement, produits — la vitrine vit en pré-lancement,
+   l'ERP du studio tourne.
+- **Phylax** — le premier produit propre du studio : le veilleur des
+   dossiers de divorce, un copilote factuel (pièces numérotées et
+   citables, affirmations vérifiées — jamais de conseil juridique).
 - **La Loco / Nature & Savoir-Faire** (bénévolat) — café citoyen de la
    gare des Fontinettes à Calais : site public + outil de gestion
    associatif sur mesure (Next.js, Supabase, auto-hébergé).
