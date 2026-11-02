@@ -10,3 +10,4 @@
 | 27/09/2026 | `prosopon@fdcac8dabce4` | v0.9 : le format devient Prosopon (πρόσωπον) — prosopon/0.5, empreintes prosopon@ ; le kit atelier suit (prosopon-ia/0.2) |
 | 15/10/2026 | `prosopon@8394b9dbc40d` | Phylax entre à l'index public des projets ; la ligne Telos suit (vitrine en pré-lancement, l'ERP tourne) — canon prosopon@8394b9dbc40d |
 | 02/11/2026 | `prosopon@1665ce3e533b` | Péira entre à l'index public des projets — le banc d'épreuve des situations, dont Phylax fut le premier-né |
+| 02/11/2026 | `prosopon@62f7390a4509` | publication |

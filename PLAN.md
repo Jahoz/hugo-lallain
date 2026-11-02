@@ -119,6 +119,18 @@ v0.1 ; les deux suivantes sont le chantier.
   (`prosopon-ia/0.2`, côté telos). Le dépôt reste `personne` — le
   descripteur français.
 
+## v0.10 — la montée 0.6 (02/11/2026)
+
+- L'atelier personne-IA (l'offre I de Telos) devient le produit
+  **PROSOPON** ce jour-là — dépôt dédié `../prosopon` où le format a
+  sa loi écrite (`format/SPEC.md`). Ce dépôt suit : la version passe à
+  `prosopon/0.6`, la vue **`presentation.html`** naît — le visage
+  public portable, page autonome au passeport visible, même recette
+  d'empreinte (elle bouge avec la version, c'est le contrat).
+- Le gabarit du produit et ce dépôt partagent la même montée : la
+  dérivation reste gradualiste (charte, règle 6) — la 0.6 se vit ici
+  avant de se vendre là-bas.
+
 ## Règles d'itération (toujours vraies)
 
 1. Le canon ne contient que du **stable** ; le vivant daté reste dans le

@@ -1,6 +1,6 @@
 # zcode-agents — Hugo Lallain
 
-> **Passeport** — vue « zcode-agents » · format: `prosopon/0.5` · auteur: `Hugo Lallain` · canon: `prosopon@1665ce3e533b` · générée: `2026-11-02` · signature: `zcode-agents.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
+> **Passeport** — vue « zcode-agents » · format: `prosopon/0.6` · auteur: `Hugo Lallain` · canon: `prosopon@62f7390a4509` · générée: `2026-11-02` · signature: `zcode-agents.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
 > **Vérifier** : `ssh-keygen -Y verify -f outils/signataires-autorises -I hugo.akawam@gmail.com -n file -s zcode-agents.md.sig < zcode-agents.md` — la version courante vit à l'adresse du passeport ; ou, le canon en main, relancer `node outils/construire-vues.mjs` et comparer l'empreinte du canon.
 > Générée, jamais éditée à la main : corriger le canon dans `~/Developer/personne`.
 

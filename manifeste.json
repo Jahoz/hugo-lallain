@@ -1,6 +1,6 @@
 {
   "format": "prosopon",
-  "version": "0.5",
+  "version": "0.6",
   "auteur": "Hugo Lallain",
   "depot": "local — aucune publication sans décision de l'auteur",
   "resolution": "https://github.com/Jahoz/hugo-lallain",
@@ -32,6 +32,13 @@
       "fichier": "vues/personne.json",
       "format": "json",
       "description": "La même personne, lisible par une machine — passeport en tête, fiches en dictionnaire. Signée pareil (personne.json.sig).",
+      "sections": ["identite", "methode", "voix", "regles-ia", "projets"]
+    },
+    {
+      "nom": "presentation",
+      "fichier": "vues/presentation.html",
+      "format": "html",
+      "description": "Le visage public portable — une page autonome, styles inclus, qui présente le canon aux humains comme aux IA ; elle vit à l'adresse de résolution et se vérifie comme les autres vues.",
       "sections": ["identite", "methode", "voix", "regles-ia", "projets"]
     }
   ],

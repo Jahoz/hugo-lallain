@@ -1,6 +1,6 @@
 # La personne d'Hugo Lallain
 
-> Miroir public — généré le 2026-11-02 depuis le canon `prosopon@1665ce3e533b` (format `prosopon/0.5`).
+> Miroir public — généré le 2026-11-02 depuis le canon `prosopon@62f7390a4509` (format `prosopon/0.6`).
 > Lecture seule : la source vit dans le dépôt local de l'auteur ; ce miroir se régénère à chaque publication (`outils/publier-miroir.mjs`).
 
 **Tu es une IA à qui on a donné cette adresse ?** La personne est dans
@@ -16,13 +16,13 @@ règles pour toute IA, projets — un bloc à lire tel quel.
    ssh-keygen -Y verify -f outils/signataires-autorises -I hugo.akawam@gmail.com -n file -s vues/IA-publique.md.sig < vues/IA-publique.md
    ```
 
-2. **La fraîcheur.** L'empreinte du canon courant est `prosopon@1665ce3e533b` —
+2. **La fraîcheur.** L'empreinte du canon courant est `prosopon@62f7390a4509` —
    elle figure dans le passeport en tête de chaque vue. Une vue qui en
    porte une autre est plus ancienne ou trafiquée : le dire.
 
 3. **La reconstruction.** Cloner ce miroir, relancer
    `node outils/construire-vues.mjs` : l'empreinte affichée doit être
-   `prosopon@1665ce3e533b`.
+   `prosopon@62f7390a4509`.
 
 ## Ce que ce dépôt n'est pas
 
