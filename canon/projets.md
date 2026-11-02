@@ -9,6 +9,10 @@
 - **Phylax** — le premier produit propre du studio : le veilleur des
    dossiers de divorce, un copilote factuel (pièces numérotées et
    citables, affirmations vérifiées — jamais de conseil juridique).
+- **Péira** — le banc d'épreuve des situations, né dans Daimonio et
+   émancipé en dépôt propre : une situation s'y raconte, des pistes se
+   projettent — et des projets en sortent (Phylax en est le
+   premier-né).
 - **La Loco / Nature & Savoir-Faire** (bénévolat) — café citoyen de la
    gare des Fontinettes à Calais : site public + outil de gestion
    associatif sur mesure (Next.js, Supabase, auto-hébergé).

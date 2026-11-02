@@ -1,6 +1,6 @@
 # zcode-agents — Hugo Lallain
 
-> **Passeport** — vue « zcode-agents » · format: `prosopon/0.5` · auteur: `Hugo Lallain` · canon: `prosopon@8394b9dbc40d` · générée: `2026-10-14` · signature: `zcode-agents.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
+> **Passeport** — vue « zcode-agents » · format: `prosopon/0.5` · auteur: `Hugo Lallain` · canon: `prosopon@1665ce3e533b` · générée: `2026-11-02` · signature: `zcode-agents.md.sig` · clé: `outils/cle-signature.pub` · adresse: `https://github.com/Jahoz/hugo-lallain`.
 > **Vérifier** : `ssh-keygen -Y verify -f outils/signataires-autorises -I hugo.akawam@gmail.com -n file -s zcode-agents.md.sig < zcode-agents.md` — la version courante vit à l'adresse du passeport ; ou, le canon en main, relancer `node outils/construire-vues.mjs` et comparer l'empreinte du canon.
 > Générée, jamais éditée à la main : corriger le canon dans `~/Developer/personne`.
 
@@ -94,6 +94,10 @@ Devenue ~/.zcode/AGENTS.md en v0.2 — le canon est la source : corriger le cano
 - **Phylax** — le premier produit propre du studio : le veilleur des
    dossiers de divorce, un copilote factuel (pièces numérotées et
    citables, affirmations vérifiées — jamais de conseil juridique).
+- **Péira** — le banc d'épreuve des situations, né dans Daimonio et
+   émancipé en dépôt propre : une situation s'y raconte, des pistes se
+   projettent — et des projets en sortent (Phylax en est le
+   premier-né).
 - **La Loco / Nature & Savoir-Faire** (bénévolat) — café citoyen de la
    gare des Fontinettes à Calais : site public + outil de gestion
    associatif sur mesure (Next.js, Supabase, auto-hébergé).
